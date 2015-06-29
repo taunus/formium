@@ -1,0 +1,25 @@
+{
+  "name": "formium",
+  "version": "1.0.0",
+  "description": "Automated progressive enhancement for <form> elements",
+  "main": "formium.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taunus/formium.git"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (http://bevacqua.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taunus/formium/issues"
+  },
+  "homepage": "https://github.com/taunus/formium",
+  "dependencies": {
+    "contra.emitter": "1.1.1",
+    "dominus": "5.0.0",
+    "formulario": "1.0.0",
+    "queso": "1.0.0",
+    "safeson": "1.0.0"
+  },
+  "devDependencies": {
+  }
+}
