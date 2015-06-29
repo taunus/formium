@@ -17,11 +17,11 @@ Formium is a progressive enhancement facility that allows you to seamlessly subm
 Exactly as you would expect, this method will submit a `<form>` asynchronously via AJAX.
 
 ```js
-form.addEventListener('submit', function (e) {
+form.addEventListener('submit', function handler (e) {
   e.preventDefault();
-  formium.submit(form, function handler (err, data) {
+  formium.submit(form, function responded (err, data) {
     // handle the response
-  }
+  });
 });
 ```
 
