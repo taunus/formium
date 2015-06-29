@@ -57,8 +57,11 @@ function submit (form, done) {
   iframe.once('load', grabResponse);
   content.document.body.appendChild(formClone);
   var frameForm = content.document.getElementById(formCloneId);
-  var amp = frameForm.action.indexOf('?') !== -1;
-  frameForm.action += queso.stringify(state.qs(form), amp);
+  var amp;
+  if (state.qs) {
+    amp = frameForm.action.indexOf('?') !== -1;
+    frameForm.action += queso.stringify(state.qs(form), amp);
+  }
   frameForm.onsubmit = null;
   frameForm.submit();
   restore.forEach(run);
