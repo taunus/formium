@@ -1,4 +1,4 @@
-# 1.0.1 Cheese: Optional
+# 1.0.2 Cheese: Optional
 
 - Fixed a bug where the `qs` option would be required
 
