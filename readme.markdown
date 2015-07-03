@@ -73,6 +73,18 @@ formium.transform(function fix (form) {
 });
 ```
 
+# Events
+
+A synthetic custom `formium` event is submitted on `<form>` DOM elements whenever we get complete a submission. It'll contain details about the response. Use this for advanced cases where you need to handle the response in a specialized way.
+
+```js
+formium.submit(form);
+form.addEventListener('formium', function (e) {
+  console.log(e.detail.error);
+  console.log(e.detail.data);
+});
+```
+
 # License
 
 MIT
