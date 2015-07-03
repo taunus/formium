@@ -89,6 +89,7 @@ function submit (form, done) {
       enable(form);
       iframe.remove();
       (done || noop).call(form, err, data);
+      $(form).emit('formium', { error: err, data: data });
     }
   }
   function readResponse (content) {

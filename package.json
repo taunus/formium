@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/taunus/formium",
   "dependencies": {
-    "dominus": "5.0.0",
+    "dominus": "5.0.1",
     "queso": "1.0.0",
     "safeson": "1.0.0"
   },
