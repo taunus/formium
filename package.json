@@ -1,6 +1,6 @@
 {
   "name": "formium",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automated progressive enhancement for <form> elements",
   "main": "formium.js",
   "repository": {
